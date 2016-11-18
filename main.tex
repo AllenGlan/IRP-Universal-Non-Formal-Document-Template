@@ -1,0 +1,65 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{titling}
+\usepackage{comment}
+\usepackage{lipsum}
+\usepackage{fullpage}
+\usepackage{verbatim}
+\usepackage{setspace}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{graphicx}
+
+\makeatletter
+
+\begin{comment}
+Universal Non-Formal Document Template
+Created and Maintained by Allen Glan
+Version 0.1.7 | October 15, 2016
+This template encourages APA Style.
+\end{comment}
+
+% Define Headers.
+%------------------------------------------------
+\title{Universal Non-Formal Document Template}
+\author{Allen Glan}
+\date{July 27, 2016}
+\newcommand{\docdescription}{A standardized template for non-formal documents.}
+\newcommand{\docproject}{IRP Standardization}
+\newcommand{\docframework}{Independent Research Protocol}
+\newcommand{\doccategory}{OTHER}
+\newcommand{\docwarning}{This document is not prepared for direct publication.}
+	\begin{comment}
+    CATEGORY OPTIONS
+	PRJOL --- Project Outlook
+    OVRVW --- Overview
+    COMMS --- Communication
+    ASSEM --- Assemblage
+    MNSCR --- Manuscript
+    PRPNT -- - Preprint
+    OTHER --- Other
+	\end{comment}
+%------------------------------------------------
+
+\newcommand{\docinitiated}{\@date}
+\newcommand{\doctitle}{\@title}
+\newcommand{\docauthors}{\@author}
+
+\begin{document}
+\noindent
+\large\textbf{\doctitle} \hfill \textbf{\docproject} \\
+\normalsize Archived in \doccategory \hfill \docframework \\
+\docauthors \hfill Initiated: \docinitiated \\
+\docdescription \hfill Reviewed: \today\\
+\rule{\textwidth}{1pt}
+\par
+{\centering
+\small\textsc{\docwarning}\par
+}
+\makeatother
+
+% Text Starts Here.
+
+\end{document}
